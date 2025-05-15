@@ -8,3 +8,6 @@ dias=5
 estudiantes_por_seccion=6
 
 asistencias = {seccion:0 for seccion in secciones}
+
+for dia in range (1,dias+1):
+    print(f"\nDía {dia}: ")
