@@ -10,6 +10,7 @@ estudiantes_por_seccion=6
 asistencias = {seccion:0 for seccion in secciones}
 
 for dia in range (1,dias+1):
+
     print(f"\nDía {dia}: ")
     for seccion in secciones:
         print(f"Asistencia para sección {seccion}: ")
@@ -30,4 +31,3 @@ for seccion, total in asistencias.items():
     total_general += total
     
 print(f"Total general de asistencias de la semana: {total_general}")
-        
