@@ -54,6 +54,3 @@ print(f"Computadoras libres: {libres1}")
 print("\nLaboratorio 2:")
 print(f"Computadoras ocupadas: {ocupadas2}")
 print(f"Computadoras libres: {libres2}")
-
-
-
