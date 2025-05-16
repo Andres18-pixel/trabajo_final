@@ -20,5 +20,21 @@ def llenar_aleatorio(laboratorio):
             columna += 1
         fila += 1
 
+# Función para contar y mostrar la cantidad de computadoras libres y ocupadas
+def mostrar_estado(lab, nombre):
+    ocupadas = 0
+    libres = 0
+
+    fila = 0
+    while fila < 5:
+        columna = 0
+        while columna < 4:
+            if lab[fila][columna] == 1:
+                ocupadas += 1  # Si es 1, está ocupada
+            else:
+                libres += 1   # Si es 0, está libre
+            columna += 1
+        fila += 1
+
 
 
