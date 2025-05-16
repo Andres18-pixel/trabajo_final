@@ -11,7 +11,7 @@ laboratorio1 = [[0, 0, 0, 0] for _ in range(5)]
 laboratorio2 = [[0, 0, 0, 0] for _ in range(5)]
 
 # Función para llenar una matriz con valores aleatorios entre 0 y 1
-def llenar_aleatorio(laboratorio):
+def llenar_laboratorio(laboratorio):
     fila = 0
     while fila < 5: # Hay 5 filas
         columna = 0
@@ -35,6 +35,19 @@ def mostrar_estado(lab, nombre):
                 libres += 1   # Si es 0, está libre
             columna += 1
         fila += 1
+
+        # Mostrar resultados
+    print(f"\nResumen del {nombre}:")
+    print(f"Computadoras ocupadas: {ocupadas}")
+    print(f"Computadoras libres: {libres}")
+
+# Llenamos ambos laboratorios con valores aleatorios
+llenar_laboratorio(laboratorio1)
+llenar_laboratorio(laboratorio2)
+
+# Mostramos los resultados
+mostrar_estado(laboratorio1, "Laboratorio 1")
+mostrar_estado(laboratorio2, "Laboratorio 2")
 
 
 
