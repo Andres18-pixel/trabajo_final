@@ -21,4 +21,7 @@ for i in range(edificios):
     print(f"\nEdificio {i + 1}:")
     print(f"  Consumo total semanal: {consumos_totales[i]:.2f} kW")
     print(f"  Promedio diario: {promedio:.2f} kW")
+<<<<<<< HEAD
 
+=======
+>>>>>>> saavedra
